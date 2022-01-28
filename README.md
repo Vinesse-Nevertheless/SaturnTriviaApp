@@ -22,3 +22,7 @@ Optionally, you may also:
 
 Edit styles.css to change the CSS of your webpage!
 Add additional trivia questions to your trivia quiz if you would like!
+
+Therefore I made the following changes:
+I added a hero header, changed the title and the background color, and I also made one other small tweak that only occurs when you submit the correct answer to a question.  
+
