@@ -27,4 +27,5 @@ Therefore I made the following changes:
 * a hero header
 * changed the title and the background color
 * added a confirmation sound for the correct answer
+* added button at the bottom of the page to auto scroll to the top of the page
 
