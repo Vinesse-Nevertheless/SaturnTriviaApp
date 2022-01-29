@@ -1,9 +1,0 @@
-{
-  "name": "saturn-trivia-app",
-  "version": "1.0.0",
-  "description": "Web page with some questions about Saturn",
-  "author": "@Vinesse-Nevertheless",
-  "dependencies": {
-    "httpd": "^2.4"
-  }
-}
