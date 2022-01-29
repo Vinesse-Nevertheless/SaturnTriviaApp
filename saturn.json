@@ -1,6 +1,6 @@
 {
-  "kind": "Template",
-  "apiVersion": "template.openshift.io/v1",
+  "kind": "JsonConfig",
+  "apiVersion": "apps.openshift.io/v1",
   "metadata": {
     "name": "saturn-trivia-app",
     "annotations": {
@@ -233,7 +233,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/sclorg/httpd-ex.git"
+      "value": "https://github.com/Vinesse-Nevertheless/SaturnTriviaApp.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
