@@ -13,4 +13,5 @@
       "openshift.io/documentation-url": "https://github.com/Vinesse-Nevertheless/SaturnTriviaApp.git",
       "template.openshift.io/bindable": "false"
     }
+  }
 }
