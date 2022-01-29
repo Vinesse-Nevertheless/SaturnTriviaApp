@@ -2,9 +2,9 @@
   "kind": "JsonConfig",
   "apiVersion": "apps.openshift.io/v1",
   "metadata": {
-    "name": "saturn-trivia-app-git",
+    "name": "saturn-trivia-app",
     "annotations": {
-      "openshift.io/display-name": "Apache HTTP Server",
+      "openshift.io/display-name": "Saturn Trivia App",
       "description": "An example Apache HTTP Server (httpd) application that serves static content. For more information about using this template, including OpenShift considerations, see https://github.com/sclorg/httpd-ex/blob/master/README.md.",
       "tags": "Saturn,trivia",
       "iconClass": "icon-apache",
@@ -16,8 +16,8 @@
   },
   "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/sclorg/httpd-ex/blob/master/README.md.",
   "labels": {
-      "template": "saturn-trivia-app-git",
-      "app": "saturn-trivia-app-git"
+      "template": "saturn-trivia-app",
+      "app": "saturn-trivia-app"
   },
   "objects": [
     {
@@ -143,7 +143,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "saturn-trivia-app-git"
+                "saturn-trivia-app"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -169,8 +169,8 @@
           "spec": {
             "containers": [
               {
-                "name": "saturn-trivia-app-git",
-                "image": "image-registry.openshift-image-registry.svc:5000/myproject/saturn-trivia-app-git@sha256:64f3775e6cb243a02a353632a96e2510b394c92d1433087f30fbe1e7f3701b26",
+                "name": "saturn-trivia-app",
+                "image": " ",
                 "ports": [
                   {
                     "containerPort": 8080
@@ -212,20 +212,20 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "saturn-trivia-app-git"
+      "value": "saturn-trivia-app"
     },
     {
       "name": "NAMESPACE",
       "displayName": "Namespace",
       "description": "The OpenShift Namespace where the ImageStream resides.",
       "required": true,
-      "value": "openshift"
+      "value": "myproject"
     },
     {
       "name": "MEMORY_LIMIT",
       "displayName": "Memory Limit",
       "description": "Maximum amount of memory the container can use.",
-      "required": true,
+      "required": false,
       "value": "512Mi"
     },
     {
