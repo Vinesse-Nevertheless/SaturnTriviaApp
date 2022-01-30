@@ -1,6 +1,6 @@
 {
-  "kind": "JsonConfig",
-  "apiVersion": "apps.openshift.io/v1",
+  "kind": "Template",
+  "apiVersion": "template.openshift.io/v1",
   "metadata": {
     "name": "saturn-trivia-app",
     "annotations": {
